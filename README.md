@@ -6,7 +6,7 @@ The *Safe Event Listener Pattern* ensures that event listeners:
 * aren't duplicated on the same element
 * are cleaned up automatically without manual `removeEventListener` calls
 This is accomplished using *WeakSet* to track elements and a *MutationObserver* to detect when an element is removed from the DOM.
-Add the following a a utility function in your project:
+Add the following as a utility function in your project:
 ```
 const eventRegistry = new WeakSet();
 
